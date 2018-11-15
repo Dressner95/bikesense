@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name capSensingStuff)(type KiCad)(uri ${KIPRJMOD}/capSensingStuff.pretty)(options "")(descr ""))
+)
