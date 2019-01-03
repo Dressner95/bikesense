@@ -1,3 +1,5 @@
 (fp_lib_table
   (lib (name capSensingStuff)(type KiCad)(uri ${KIPRJMOD}/capSensingStuff.pretty)(options "")(descr ""))
+  (lib (name revLed)(type KiCad)(uri ${KIPRJMOD}/revLed.pretty)(options "")(descr ""))
+  (lib (name graphics)(type KiCad)(uri ${KIPRJMOD}/graphics.pretty)(options "")(descr ""))
 )
