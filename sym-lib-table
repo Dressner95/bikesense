@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name cap1188)(type Legacy)(uri /home/dressner/Documents/bikesenseCap/cap1188.lib)(options "")(descr ""))
   (lib (name ccs811)(type Legacy)(uri /home/dressner/Documents/bikesenseCap/ccs811.lib)(options "")(descr ""))
+  (lib (name bikesenseCap-rescue)(type Legacy)(uri ${KIPRJMOD}/bikesenseCap-rescue.lib)(options "")(descr ""))
 )

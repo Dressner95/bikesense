@@ -6,8 +6,8 @@ $Descr User 9843 7874
 encoding utf-8
 Sheet 1 1
 Title "Bike Sense Daughter Board"
-Date "2018-11-14"
-Rev "Rev A"
+Date "2019-02-17"
+Rev "Rev C"
 Comp "David Dressner"
 Comment1 ""
 Comment2 ""
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Conn_01x04_Male J1
+L bikesenseCap-rescue:Conn_01x04_Male-Connector J1
 U 1 1 5BE338ED
 P 1000 1100
 F 0 "J1" H 1050 1325 50  0000 C CNN
@@ -38,7 +38,7 @@ Wire Wire Line
 Wire Wire Line
 	1450 1300 1450 1350
 $Comp
-L power:GND #PWR0101
+L bikesenseCap-rescue:GND-power #PWR0101
 U 1 1 5BE33B60
 P 1450 1350
 F 0 "#PWR0101" H 1450 1100 50  0001 C CNN
@@ -49,7 +49,7 @@ F 3 "" H 1450 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0102
+L bikesenseCap-rescue:+3V3-power #PWR0102
 U 1 1 5BE33BB9
 P 1450 1125
 F 0 "#PWR0102" H 1450 975 50  0001 C CNN
@@ -60,7 +60,7 @@ F 3 "" H 1450 1125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L cap1188:cap1188 U2
+L bikesenseCap-rescue:cap1188-cap1188 U2
 U 1 1 5BE345A8
 P 3050 1275
 F 0 "U2" H 3425 1690 50  0000 C CNN
@@ -73,7 +73,7 @@ $EndComp
 NoConn ~ 2850 1125
 NoConn ~ 2850 1225
 $Comp
-L power:+3V3 #PWR0103
+L bikesenseCap-rescue:+3V3-power #PWR0103
 U 1 1 5BE3466A
 P 2600 2275
 F 0 "#PWR0103" H 2600 2125 50  0001 C CNN
@@ -86,7 +86,7 @@ $EndComp
 Wire Wire Line
 	2600 2275 2850 2275
 $Comp
-L power:GND #PWR0104
+L bikesenseCap-rescue:GND-power #PWR0104
 U 1 1 5BE3472B
 P 2600 2525
 F 0 "#PWR0104" H 2600 2275 50  0001 C CNN
@@ -99,7 +99,7 @@ $EndComp
 Wire Wire Line
 	2600 2525 2850 2525
 $Comp
-L power:+3V3 #PWR0105
+L bikesenseCap-rescue:+3V3-power #PWR0105
 U 1 1 5BE34762
 P 2425 975
 F 0 "#PWR0105" H 2425 825 50  0001 C CNN
@@ -110,7 +110,7 @@ F 3 "" H 2425 975 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R2
+L bikesenseCap-rescue:R_Small-Device R2
 U 1 1 5BE347D7
 P 2425 1200
 F 0 "R2" H 2575 1125 50  0000 R CNN
@@ -121,7 +121,7 @@ F 3 "~" H 2425 1200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R5
+L bikesenseCap-rescue:R_Small-Device R5
 U 1 1 5BE348D4
 P 2625 1200
 F 0 "R5" H 2775 1125 50  0000 R CNN
@@ -132,7 +132,7 @@ F 3 "~" H 2625 1200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R1
+L bikesenseCap-rescue:R_Small-Device R1
 U 1 1 5BE348F8
 P 2225 1200
 F 0 "R1" H 2375 1125 50  0000 R CNN
@@ -168,7 +168,7 @@ Wire Wire Line
 Wire Wire Line
 	2225 1675 2850 1675
 $Comp
-L Device:R_Small R3
+L bikesenseCap-rescue:R_Small-Device R3
 U 1 1 5BE34CAD
 P 2600 1775
 F 0 "R3" V 2550 1650 50  0000 C CNN
@@ -183,7 +183,7 @@ Wire Wire Line
 Wire Wire Line
 	2500 1775 2350 1775
 $Comp
-L power:GND #PWR0106
+L bikesenseCap-rescue:GND-power #PWR0106
 U 1 1 5BE35133
 P 2350 2000
 F 0 "#PWR0106" H 2350 1750 50  0001 C CNN
@@ -196,7 +196,7 @@ $EndComp
 Wire Wire Line
 	2350 1775 2350 1925
 $Comp
-L Device:R_Small R4
+L bikesenseCap-rescue:R_Small-Device R4
 U 1 1 5BE35313
 P 2600 1925
 F 0 "R4" V 2675 2100 50  0000 R CNN
@@ -222,7 +222,7 @@ SDA
 Text Label 2800 1425 2    50   ~ 0
 SCL
 $Comp
-L cap1188:PAD J2
+L bikesenseCap-rescue:PAD-cap1188 J2
 U 1 1 5BE35CD2
 P 4150 1625
 F 0 "J2" H 4575 2075 50  0000 L CNN
@@ -233,7 +233,7 @@ F 3 "" H 4150 1625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L cap1188:PAD J3
+L bikesenseCap-rescue:PAD-cap1188 J3
 U 1 1 5BE36156
 P 4150 1825
 F 0 "J3" H 4575 2275 50  0000 L CNN
@@ -244,7 +244,7 @@ F 3 "" H 4150 1825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L cap1188:PAD J4
+L bikesenseCap-rescue:PAD-cap1188 J4
 U 1 1 5BE36186
 P 4150 2025
 F 0 "J4" H 4575 2475 50  0000 L CNN
@@ -255,7 +255,7 @@ F 3 "" H 4150 2025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L cap1188:PAD J5
+L bikesenseCap-rescue:PAD-cap1188 J5
 U 1 1 5BE361B6
 P 4150 2225
 F 0 "J5" H 4575 2675 50  0000 L CNN
@@ -274,7 +274,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 1425 4150 1425
 $Comp
-L Device:LED_Small D6
+L bikesenseCap-rescue:LED_Small-Device D6
 U 1 1 5BE39893
 P 4875 1725
 F 0 "D6" H 4975 1775 50  0000 C CNN
@@ -285,7 +285,7 @@ F 3 "~" V 4875 1725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_Small D5
+L bikesenseCap-rescue:LED_Small-Device D5
 U 1 1 5BE398DF
 P 4875 1525
 F 0 "D5" H 4975 1575 50  0000 C CNN
@@ -296,7 +296,7 @@ F 3 "~" V 4875 1525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_Small D4
+L bikesenseCap-rescue:LED_Small-Device D4
 U 1 1 5BE39929
 P 4875 1325
 F 0 "D4" H 4975 1375 50  0000 C CNN
@@ -307,7 +307,7 @@ F 3 "~" V 4875 1325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_Small D3
+L bikesenseCap-rescue:LED_Small-Device D3
 U 1 1 5BE39981
 P 4875 1125
 F 0 "D3" H 4975 1175 50  0000 C CNN
@@ -326,7 +326,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 1725 4775 1725
 $Comp
-L Device:R_Small R11
+L bikesenseCap-rescue:R_Small-Device R11
 U 1 1 5BE3C213
 P 5225 1125
 F 0 "R11" V 5300 1050 50  0000 R CNN
@@ -337,7 +337,7 @@ F 3 "~" H 5225 1125 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R12
+L bikesenseCap-rescue:R_Small-Device R12
 U 1 1 5BE3C437
 P 5225 1325
 F 0 "R12" V 5300 1250 50  0000 R CNN
@@ -348,7 +348,7 @@ F 3 "~" H 5225 1325 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R13
+L bikesenseCap-rescue:R_Small-Device R13
 U 1 1 5BE3C48B
 P 5225 1525
 F 0 "R13" V 5300 1450 50  0000 R CNN
@@ -359,7 +359,7 @@ F 3 "~" H 5225 1525 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R14
+L bikesenseCap-rescue:R_Small-Device R14
 U 1 1 5BE3C4DD
 P 5225 1725
 F 0 "R14" V 5300 1650 50  0000 R CNN
@@ -378,7 +378,7 @@ Wire Wire Line
 Wire Wire Line
 	4975 1725 5125 1725
 $Comp
-L power:+3V3 #PWR0107
+L bikesenseCap-rescue:+3V3-power #PWR0107
 U 1 1 5BE414C9
 P 5550 1050
 F 0 "#PWR0107" H 5550 900 50  0001 C CNN
@@ -408,7 +408,7 @@ Wire Wire Line
 	5550 1725 5550 1525
 Connection ~ 5550 1525
 $Comp
-L ccs811:CCS811 U1
+L bikesenseCap-rescue:CCS811-ccs811 U1
 U 1 1 5BE4E524
 P 2250 4075
 F 0 "U1" H 2500 4200 50  0000 C CNN
@@ -423,7 +423,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 4175 2000 4025
 $Comp
-L power:+3V3 #PWR0108
+L bikesenseCap-rescue:+3V3-power #PWR0108
 U 1 1 5BE4F7F4
 P 2000 4025
 F 0 "#PWR0108" H 2000 3875 50  0001 C CNN
@@ -433,48 +433,30 @@ F 3 "" H 2000 4025 50  0001 C CNN
 	1    2000 4025
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2150 4575 2000 4575
-Wire Wire Line
-	2000 4575 2000 4425
-Connection ~ 2000 4425
-Wire Wire Line
-	2150 4425 2000 4425
 $Comp
-L Device:Thermistor_NTC TH1
+L bikesenseCap-rescue:Thermistor_NTC-Device TH1
 U 1 1 5BE5222E
-P 1650 4425
-F 0 "TH1" V 1475 4425 50  0000 C CNN
-F 1 "10K ntc" V 1800 4500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 1650 4475 50  0001 C CNN
-F 3 "~" H 1650 4475 50  0001 C CNN
-	1    1650 4425
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1800 4425 2000 4425
-Wire Wire Line
-	1500 4425 1500 4725
-Wire Wire Line
-	1500 4725 2150 4725
-Connection ~ 1500 4725
-Wire Wire Line
-	1500 4725 1225 4725
-Wire Wire Line
-	1225 4725 1225 4425
-$Comp
-L power:+3V3 #PWR0109
-U 1 1 5BE56A20
-P 1225 4425
-F 0 "#PWR0109" H 1225 4275 50  0001 C CNN
-F 1 "+3V3" H 1240 4598 50  0000 C CNN
-F 2 "" H 1225 4425 50  0001 C CNN
-F 3 "" H 1225 4425 50  0001 C CNN
-	1    1225 4425
+P 1300 4700
+F 0 "TH1" V 1125 4700 50  0000 C CNN
+F 1 "10K ntc" V 1450 4775 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 1300 4750 50  0001 C CNN
+F 3 "~" H 1300 4750 50  0001 C CNN
+	1    1300 4700
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0110
+L bikesenseCap-rescue:+3V3-power #PWR0109
+U 1 1 5BE56A20
+P 1300 4125
+F 0 "#PWR0109" H 1300 3975 50  0001 C CNN
+F 1 "+3V3" H 1315 4298 50  0000 C CNN
+F 2 "" H 1300 4125 50  0001 C CNN
+F 3 "" H 1300 4125 50  0001 C CNN
+	1    1300 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L bikesenseCap-rescue:GND-power #PWR0110
 U 1 1 5BE570C3
 P 2050 5050
 F 0 "#PWR0110" H 2050 4800 50  0001 C CNN
@@ -489,7 +471,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 4975 2050 5050
 $Comp
-L Device:R_Small R6
+L bikesenseCap-rescue:R_Small-Device R6
 U 1 1 5BE58D3E
 P 3050 4075
 F 0 "R6" H 3200 4000 50  0000 R CNN
@@ -500,7 +482,7 @@ F 3 "~" H 3050 4075 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R8
+L bikesenseCap-rescue:R_Small-Device R8
 U 1 1 5BE58EC6
 P 3225 4075
 F 0 "R8" H 3375 4000 50  0000 R CNN
@@ -528,7 +510,7 @@ Connection ~ 3125 3900
 Wire Wire Line
 	3125 3900 3225 3900
 $Comp
-L power:+3V3 #PWR0111
+L bikesenseCap-rescue:+3V3-power #PWR0111
 U 1 1 5BE620AE
 P 3125 3750
 F 0 "#PWR0111" H 3125 3600 50  0001 C CNN
@@ -539,163 +521,34 @@ F 3 "" H 3125 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R7
+L bikesenseCap-rescue:R_Small-Device R7
 U 1 1 5BE622A4
-P 3175 4975
-F 0 "R7" H 3325 4900 50  0000 R CNN
-F 1 "100K" V 3175 5050 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 3175 4975 50  0001 C CNN
-F 3 "~" H 3175 4975 50  0001 C CNN
-	1    3175 4975
+P 3450 5050
+F 0 "R7" H 3600 4975 50  0000 R CNN
+F 1 "100K" V 3450 5125 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 3450 5050 50  0001 C CNN
+F 3 "~" H 3450 5050 50  0001 C CNN
+	1    3450 5050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2850 4875 3175 4875
 $Comp
-L power:GND #PWR0112
+L bikesenseCap-rescue:GND-power #PWR0112
 U 1 1 5BE643C6
-P 3175 5125
-F 0 "#PWR0112" H 3175 4875 50  0001 C CNN
-F 1 "GND" H 3180 4952 50  0000 C CNN
-F 2 "" H 3175 5125 50  0001 C CNN
-F 3 "" H 3175 5125 50  0001 C CNN
-	1    3175 5125
+P 3450 5300
+F 0 "#PWR0112" H 3450 5050 50  0001 C CNN
+F 1 "GND" H 3455 5127 50  0000 C CNN
+F 2 "" H 3450 5300 50  0001 C CNN
+F 3 "" H 3450 5300 50  0001 C CNN
+	1    3450 5300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3175 5075 3175 5125
 NoConn ~ 2850 4725
-$Comp
-L Device:R_Small R9
-U 1 1 5BE8A219
-P 3450 4075
-F 0 "R9" H 3600 4000 50  0000 R CNN
-F 1 "100K" V 3450 4150 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 3450 4075 50  0001 C CNN
-F 3 "~" H 3450 4075 50  0001 C CNN
-	1    3450 4075
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R10
-U 1 1 5BE8A321
-P 3675 4075
-F 0 "R10" H 3825 4000 50  0000 R CNN
-F 1 "100K" V 3675 4150 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 3675 4075 50  0001 C CNN
-F 3 "~" H 3675 4075 50  0001 C CNN
-	1    3675 4075
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3450 3975 3450 3900
-Connection ~ 3225 3900
-Wire Wire Line
-	3675 3975 3675 3900
-Wire Wire Line
-	3225 3900 3450 3900
-Connection ~ 3450 3900
-Wire Wire Line
-	3450 3900 3675 3900
-Wire Wire Line
-	3450 4175 3450 4250
-Wire Wire Line
-	3450 4425 2850 4425
-Wire Wire Line
-	3675 4175 3675 4525
-Wire Wire Line
-	3675 4575 2850 4575
-$Comp
-L Diode:1N4148 D1
-U 1 1 5BE934D2
-P 3925 4250
-F 0 "D1" H 4025 4200 50  0000 C CNN
-F 1 "1N4148" H 3925 4375 50  0000 C CNN
-F 2 "Diodes_SMD:D_SOD-123" H 3925 4075 50  0001 C CNN
-F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3925 4250 50  0001 C CNN
-	1    3925 4250
-	-1   0    0    1   
-$EndComp
-$Comp
-L Diode:1N4148 D2
-U 1 1 5BE935A4
-P 3925 4525
-F 0 "D2" H 4025 4475 50  0000 C CNN
-F 1 "1N4148" H 3925 4650 50  0000 C CNN
-F 2 "Diodes_SMD:D_SOD-123" H 3925 4350 50  0001 C CNN
-F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3925 4525 50  0001 C CNN
-	1    3925 4525
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3775 4250 3450 4250
-Connection ~ 3450 4250
-Wire Wire Line
-	3450 4250 3450 4425
-Wire Wire Line
-	3775 4525 3675 4525
-Connection ~ 3675 4525
-Wire Wire Line
-	3675 4525 3675 4575
-Wire Wire Line
-	4075 4525 4275 4525
-Wire Wire Line
-	4075 4250 4175 4250
-$Comp
-L Connector_Generic:Conn_01x01 J10
-U 1 1 5BE9E7D3
-P 4475 4250
-F 0 "J10" H 4555 4292 50  0000 L CNN
-F 1 "Conn_01x01" H 4555 4201 50  0000 L CNN
-F 2 "Connectors:1X01" H 4475 4250 50  0001 C CNN
-F 3 "~" H 4475 4250 50  0001 C CNN
-	1    4475 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J11
-U 1 1 5BE9E883
-P 4475 4525
-F 0 "J11" H 4555 4567 50  0000 L CNN
-F 1 "Conn_01x01" H 4555 4476 50  0000 L CNN
-F 2 "Connectors:1X01" H 4475 4525 50  0001 C CNN
-F 3 "~" H 4475 4525 50  0001 C CNN
-	1    4475 4525
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Bridged JP1
-U 1 1 5BE9EC2E
-P 4175 4100
-F 0 "JP1" V 4175 4168 50  0000 L CNN
-F 1 "SolderJumper_2_Bridged" V 4220 4168 50  0001 L CNN
-F 2 "Jumpers:SMT-JUMPER_2_NO_SILK" H 4175 4100 50  0001 C CNN
-F 3 "~" H 4175 4100 50  0001 C CNN
-	1    4175 4100
-	0    1    1    0   
-$EndComp
-Connection ~ 4175 4250
-Wire Wire Line
-	4175 4250 4275 4250
-$Comp
-L power:GND #PWR0113
-U 1 1 5BE9EE95
-P 4025 3950
-F 0 "#PWR0113" H 4025 3700 50  0001 C CNN
-F 1 "GND" H 4030 3777 50  0000 C CNN
-F 2 "" H 4025 3950 50  0001 C CNN
-F 3 "" H 4025 3950 50  0001 C CNN
-	1    4025 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4025 3950 4175 3950
 Text Label 3000 4275 2    50   ~ 0
 SDA
 Text Label 3000 4175 2    50   ~ 0
 SCL
 $Comp
-L Interface_Expansion:TCA9534 U3
+L bikesenseCap-rescue:TCA9534-Interface_Expansion U3
 U 1 1 5BECCC0F
 P 7750 5000
 F 0 "U3" H 7750 5778 50  0000 C CNN
@@ -725,7 +578,7 @@ Connection ~ 7225 5300
 Wire Wire Line
 	7225 5300 7225 5400
 $Comp
-L power:GND #PWR0114
+L bikesenseCap-rescue:GND-power #PWR0114
 U 1 1 5BED8D36
 P 7225 5800
 F 0 "#PWR0114" H 7225 5550 50  0001 C CNN
@@ -739,7 +592,7 @@ NoConn ~ 7350 4900
 Wire Wire Line
 	7750 4400 7250 4400
 $Comp
-L Device:R_Small R23
+L bikesenseCap-rescue:R_Small-Device R23
 U 1 1 5BEDF90A
 P 7150 4600
 F 0 "R23" H 7275 4475 50  0000 R CNN
@@ -750,7 +603,7 @@ F 3 "~" H 7150 4600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R26
+L bikesenseCap-rescue:R_Small-Device R26
 U 1 1 5BEDF984
 P 7250 4700
 F 0 "R26" H 7200 4575 50  0000 R CNN
@@ -761,7 +614,7 @@ F 3 "~" H 7250 4700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3V3 #PWR0115
+L bikesenseCap-rescue:+3V3-power #PWR0115
 U 1 1 5BEDFDBB
 P 7050 4400
 F 0 "#PWR0115" H 7050 4250 50  0001 C CNN
@@ -790,7 +643,7 @@ SDA
 Text Label 7175 4700 3    50   ~ 0
 SCL
 $Comp
-L Device:LED_Small D18
+L bikesenseCap-rescue:LED_Small-Device D18
 U 1 1 5BEF0D3F
 P 8600 2250
 F 0 "D18" V 8646 2182 50  0000 R CNN
@@ -801,7 +654,7 @@ F 3 "~" V 8600 2250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R35
+L bikesenseCap-rescue:R_Small-Device R35
 U 1 1 5BEF0FF6
 P 8600 1950
 F 0 "R35" H 8659 1996 50  0000 L CNN
@@ -814,7 +667,7 @@ $EndComp
 Wire Wire Line
 	8600 2050 8600 2150
 $Comp
-L Device:R_Small R36
+L bikesenseCap-rescue:R_Small-Device R36
 U 1 1 5BEF49E4
 P 8850 2100
 F 0 "R36" H 8909 2146 50  0000 L CNN
@@ -837,7 +690,7 @@ Wire Wire Line
 Wire Wire Line
 	8600 1775 8850 1775
 $Comp
-L Device:LED_Small D14
+L bikesenseCap-rescue:LED_Small-Device D14
 U 1 1 5BF12C0C
 P 7500 1350
 F 0 "D14" V 7525 1275 50  0000 R CNN
@@ -848,7 +701,7 @@ F 3 "~" V 7500 1350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R27
+L bikesenseCap-rescue:R_Small-Device R27
 U 1 1 5BF12C12
 P 7500 1050
 F 0 "R27" H 7350 1100 50  0000 L CNN
@@ -861,7 +714,7 @@ $EndComp
 Wire Wire Line
 	7500 1150 7500 1250
 $Comp
-L Device:R_Small R29
+L bikesenseCap-rescue:R_Small-Device R29
 U 1 1 5BF12C19
 P 7750 1200
 F 0 "R29" H 7600 1225 50  0000 L CNN
@@ -884,7 +737,7 @@ Wire Wire Line
 Wire Wire Line
 	7500 875  7750 875 
 $Comp
-L Device:LED_Small D16
+L bikesenseCap-rescue:LED_Small-Device D16
 U 1 1 5BF30911
 P 8100 1775
 F 0 "D16" V 8146 1707 50  0000 R CNN
@@ -895,7 +748,7 @@ F 3 "~" V 8100 1775 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R31
+L bikesenseCap-rescue:R_Small-Device R31
 U 1 1 5BF30917
 P 8100 1475
 F 0 "R31" H 8159 1521 50  0000 L CNN
@@ -908,7 +761,7 @@ $EndComp
 Wire Wire Line
 	8100 1575 8100 1675
 $Comp
-L Device:R_Small R33
+L bikesenseCap-rescue:R_Small-Device R33
 U 1 1 5BF3091E
 P 8350 1625
 F 0 "R33" H 8409 1671 50  0000 L CNN
@@ -931,7 +784,7 @@ Wire Wire Line
 Wire Wire Line
 	8100 1300 8350 1300
 $Comp
-L Device:LED_Small D17
+L bikesenseCap-rescue:LED_Small-Device D17
 U 1 1 5BF3518F
 P 8100 2775
 F 0 "D17" V 8146 2707 50  0000 R CNN
@@ -942,7 +795,7 @@ F 3 "~" V 8100 2775 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R32
+L bikesenseCap-rescue:R_Small-Device R32
 U 1 1 5BF35195
 P 8100 2475
 F 0 "R32" H 8159 2521 50  0000 L CNN
@@ -955,7 +808,7 @@ $EndComp
 Wire Wire Line
 	8100 2575 8100 2675
 $Comp
-L Device:R_Small R34
+L bikesenseCap-rescue:R_Small-Device R34
 U 1 1 5BF3519C
 P 8350 2625
 F 0 "R34" H 8409 2671 50  0000 L CNN
@@ -978,7 +831,7 @@ Wire Wire Line
 Wire Wire Line
 	8100 2300 8350 2300
 $Comp
-L Device:LED_Small D15
+L bikesenseCap-rescue:LED_Small-Device D15
 U 1 1 5BF3A12C
 P 7500 3150
 F 0 "D15" V 7546 3082 50  0000 R CNN
@@ -989,7 +842,7 @@ F 3 "~" V 7500 3150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R28
+L bikesenseCap-rescue:R_Small-Device R28
 U 1 1 5BF3A132
 P 7500 2850
 F 0 "R28" H 7559 2896 50  0000 L CNN
@@ -1002,7 +855,7 @@ $EndComp
 Wire Wire Line
 	7500 2950 7500 3050
 $Comp
-L Device:R_Small R30
+L bikesenseCap-rescue:R_Small-Device R30
 U 1 1 5BF3A139
 P 7750 3000
 F 0 "R30" H 7809 3046 50  0000 L CNN
@@ -1025,7 +878,7 @@ Wire Wire Line
 Wire Wire Line
 	7500 2675 7750 2675
 $Comp
-L Device:LED_Small D13
+L bikesenseCap-rescue:LED_Small-Device D13
 U 1 1 5BF3F6B0
 P 6950 2800
 F 0 "D13" V 6996 2732 50  0000 R CNN
@@ -1036,7 +889,7 @@ F 3 "~" V 6950 2800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R22
+L bikesenseCap-rescue:R_Small-Device R22
 U 1 1 5BF3F6B6
 P 6950 2500
 F 0 "R22" H 7009 2546 50  0000 L CNN
@@ -1049,7 +902,7 @@ $EndComp
 Wire Wire Line
 	6950 2600 6950 2700
 $Comp
-L Device:R_Small R25
+L bikesenseCap-rescue:R_Small-Device R25
 U 1 1 5BF3F6BD
 P 7200 2650
 F 0 "R25" H 7259 2696 50  0000 L CNN
@@ -1072,7 +925,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 2325 7200 2325
 $Comp
-L Device:LED_Small D11
+L bikesenseCap-rescue:LED_Small-Device D11
 U 1 1 5BF453A8
 P 6425 2325
 F 0 "D11" V 6471 2257 50  0000 R CNN
@@ -1083,7 +936,7 @@ F 3 "~" V 6425 2325 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R19
+L bikesenseCap-rescue:R_Small-Device R19
 U 1 1 5BF453AE
 P 6425 2025
 F 0 "R19" H 6484 2071 50  0000 L CNN
@@ -1096,7 +949,7 @@ $EndComp
 Wire Wire Line
 	6425 2125 6425 2225
 $Comp
-L Device:R_Small R20
+L bikesenseCap-rescue:R_Small-Device R20
 U 1 1 5BF453B5
 P 6675 2175
 F 0 "R20" H 6734 2221 50  0000 L CNN
@@ -1119,7 +972,7 @@ Wire Wire Line
 Wire Wire Line
 	6425 1850 6675 1850
 $Comp
-L Device:LED_Small D12
+L bikesenseCap-rescue:LED_Small-Device D12
 U 1 1 5BF4B85C
 P 6950 1750
 F 0 "D12" V 6996 1682 50  0000 R CNN
@@ -1130,7 +983,7 @@ F 3 "~" V 6950 1750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R21
+L bikesenseCap-rescue:R_Small-Device R21
 U 1 1 5BF4B862
 P 6950 1450
 F 0 "R21" H 7009 1496 50  0000 L CNN
@@ -1143,7 +996,7 @@ $EndComp
 Wire Wire Line
 	6950 1550 6950 1650
 $Comp
-L Device:R_Small R24
+L bikesenseCap-rescue:R_Small-Device R24
 U 1 1 5BF4B869
 P 7200 1600
 F 0 "R24" H 7259 1646 50  0000 L CNN
@@ -1166,7 +1019,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 1275 7200 1275
 $Comp
-L power:+3V3 #PWR0116
+L bikesenseCap-rescue:+3V3-power #PWR0116
 U 1 1 5BF59D43
 P 7500 800
 F 0 "#PWR0116" H 7500 650 50  0001 C CNN
@@ -1301,7 +1154,7 @@ West
 Text Label 6900 2000 3    50   ~ 0
 NorthWest
 $Comp
-L power:PWR_FLAG #FLG0101
+L bikesenseCap-rescue:PWR_FLAG-power #FLG0101
 U 1 1 5C042522
 P 1000 2375
 F 0 "#FLG0101" H 1000 2450 50  0001 C CNN
@@ -1312,7 +1165,7 @@ F 3 "~" H 1000 2375 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0102
+L bikesenseCap-rescue:PWR_FLAG-power #FLG0102
 U 1 1 5C0426E6
 P 1325 2500
 F 0 "#FLG0102" H 1325 2575 50  0001 C CNN
@@ -1323,7 +1176,7 @@ F 3 "~" H 1325 2500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR0117
+L bikesenseCap-rescue:GND-power #PWR0117
 U 1 1 5C042809
 P 1000 2500
 F 0 "#PWR0117" H 1000 2250 50  0001 C CNN
@@ -1336,7 +1189,7 @@ $EndComp
 Wire Wire Line
 	1000 2500 1000 2375
 $Comp
-L power:+3V3 #PWR0118
+L bikesenseCap-rescue:+3V3-power #PWR0118
 U 1 1 5C04CAED
 P 1325 2350
 F 0 "#PWR0118" H 1325 2200 50  0001 C CNN
@@ -1380,4 +1233,100 @@ NoConn ~ 4000 2325
 NoConn ~ 4000 2425
 NoConn ~ 4000 2525
 NoConn ~ 4000 2625
+$Comp
+L bikesenseCap-rescue:+3V3-power #PWR0113
+U 1 1 5C69A5B5
+P 3450 4850
+F 0 "#PWR0113" H 3450 4700 50  0001 C CNN
+F 1 "+3V3" H 3465 5023 50  0000 C CNN
+F 2 "" H 3450 4850 50  0001 C CNN
+F 3 "" H 3450 4850 50  0001 C CNN
+	1    3450 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4850 3450 4950
+Wire Wire Line
+	3450 5150 3450 5225
+Wire Wire Line
+	3300 4875 3300 5225
+Wire Wire Line
+	3300 5225 3450 5225
+Wire Wire Line
+	2850 4875 3300 4875
+Connection ~ 3450 5225
+Wire Wire Line
+	3450 5225 3450 5300
+Connection ~ 3225 3900
+Wire Wire Line
+	3675 3975 3675 3900
+$Comp
+L bikesenseCap-rescue:R_Small-Device R10
+U 1 1 5BE8A321
+P 3675 4075
+F 0 "R10" H 3825 4000 50  0000 R CNN
+F 1 "100K" V 3675 4150 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 3675 4075 50  0001 C CNN
+F 3 "~" H 3675 4075 50  0001 C CNN
+	1    3675 4075
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3675 4575 2850 4575
+Wire Wire Line
+	3675 4175 3675 4575
+Wire Wire Line
+	3225 3900 3675 3900
+$Comp
+L bikesenseCap-rescue:GND-power #PWR0119
+U 1 1 5C6CF3D8
+P 3425 4325
+F 0 "#PWR0119" H 3425 4075 50  0001 C CNN
+F 1 "GND" H 3430 4152 50  0000 C CNN
+F 2 "" H 3425 4325 50  0001 C CNN
+F 3 "" H 3425 4325 50  0001 C CNN
+	1    3425 4325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3425 4325 3125 4325
+Wire Wire Line
+	3125 4325 3125 4425
+Wire Wire Line
+	3125 4425 2850 4425
+$Comp
+L bikesenseCap-rescue:R_Small-Device R9
+U 1 1 5C6D836F
+P 1300 4350
+F 0 "R9" H 1450 4275 50  0000 R CNN
+F 1 "10K" V 1300 4425 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 1300 4350 50  0001 C CNN
+F 3 "~" H 1300 4350 50  0001 C CNN
+	1    1300 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1300 4125 1300 4250
+Wire Wire Line
+	1300 4450 1300 4500
+Wire Wire Line
+	1300 4500 1750 4500
+Wire Wire Line
+	1750 4500 1750 4725
+Wire Wire Line
+	1750 4725 2150 4725
+Connection ~ 1300 4500
+Wire Wire Line
+	1300 4500 1300 4550
+Wire Wire Line
+	1300 4850 1975 4850
+Wire Wire Line
+	1975 4850 1975 4575
+Wire Wire Line
+	1975 4425 2150 4425
+Wire Wire Line
+	2150 4575 1975 4575
+Connection ~ 1975 4575
+Wire Wire Line
+	1975 4575 1975 4425
 $EndSCHEMATC
