@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 21)
-    (tracks 587)
+    (tracks 588)
     (zones 0)
     (modules 53)
     (nets 51)
@@ -12,8 +12,8 @@
   (page A4)
   (title_block
     (title Bikesense)
-    (date 2019-01-02)
-    (rev "REV B")
+    (date 2019-03-04)
+    (rev "REV D")
     (company "David Dressner")
   )
 
@@ -2614,8 +2614,6 @@
   (segment (start 122.85 103.45) (end 122.85 98.863589) (width 0.25) (layer F.Cu) (net 27))
   (segment (start 122.85 98.863589) (end 122.1 98.113589) (width 0.25) (layer F.Cu) (net 27))
   (via (at 160 125) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 27))
-  (segment (start 152 128) (end 151 127) (width 0.25) (layer F.Cu) (net 27))
-  (segment (start 153 128) (end 152 128) (width 0.25) (layer F.Cu) (net 27))
   (segment (start 157 128) (end 153 128) (width 0.25) (layer B.Cu) (net 27))
   (segment (start 160 125) (end 157 128) (width 0.25) (layer B.Cu) (net 27))
   (via (at 153 128) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 27))
@@ -2652,6 +2650,9 @@
   (segment (start 156.2 104.736411) (end 157.930011 103.0064) (width 0.25) (layer F.Cu) (net 27))
   (segment (start 157.930011 89.350011) (end 154.94 86.36) (width 0.25) (layer F.Cu) (net 27))
   (segment (start 157.930011 103.0064) (end 157.930011 89.350011) (width 0.25) (layer F.Cu) (net 27))
+  (segment (start 150.8 126.8) (end 145 126.8) (width 0.25) (layer F.Cu) (net 27))
+  (segment (start 153 128) (end 152 128) (width 0.25) (layer F.Cu) (net 27))
+  (segment (start 152 128) (end 150.8 126.8) (width 0.25) (layer F.Cu) (net 27))
   (segment (start 168.4986 115.81) (end 168.2047 115.81) (width 0.25) (layer F.Cu) (net 28))
   (segment (start 168.7924 115.81) (end 168.4986 115.81) (width 0.25) (layer F.Cu) (net 28) (status 10))
   (segment (start 169.38 114.54) (end 170.5553 114.54) (width 0.25) (layer F.Cu) (net 28) (status 10))
