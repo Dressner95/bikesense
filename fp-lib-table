@@ -2,4 +2,6 @@
   (lib (name capSensingStuff)(type KiCad)(uri ${KIPRJMOD}/capSensingStuff.pretty)(options "")(descr ""))
   (lib (name revLed)(type KiCad)(uri ${KIPRJMOD}/revLed.pretty)(options "")(descr ""))
   (lib (name graphics)(type KiCad)(uri ${KIPRJMOD}/graphics.pretty)(options "")(descr ""))
+  (lib (name .pretty)(type KiCad)(uri "${KIPRJMOD}/Antenna Board/antenna/.pretty")(options "")(descr ""))
+  (lib (name antenna)(type KiCad)(uri "${KIPRJMOD}/Antenna Board/antenna")(options "")(descr ""))
 )

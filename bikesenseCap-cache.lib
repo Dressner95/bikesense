@@ -1,11 +1,32 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# bikesenseCap-rescue:+3V3-power
+# Device_Antenna_Shield
 #
-DEF bikesenseCap-rescue:+3V3-power #PWR 0 0 Y Y 1 F P
+DEF Device_Antenna_Shield AE 0 40 N N 1 F N
+F0 "AE" -75 175 50 H V R CNN
+F1 "Device_Antenna_Shield" -75 100 50 H V R CNN
+F2 "" 0 100 50 H I C CNN
+F3 "" 0 100 50 H I C CNN
+DRAW
+A -1 -73 32 -882 1242 0 1 0 N 0 -105 -20 -45
+A 1 -73 32 -918 558 0 1 0 N 0 -105 20 -45
+C 30 -75 7 0 1 0 F
+P 2 0 1 0 0 -100 0 0 N
+P 2 0 1 10 0 200 0 -150 N
+P 2 0 1 0 30 -75 100 -75 N
+P 2 0 1 0 100 -100 100 -75 N
+P 3 0 1 10 50 200 0 0 -50 200 N
+X A 1 0 -200 100 U 50 50 1 1 I
+X Shield 2 100 -200 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# bikesenseCap-rescue_+3V3-power
+#
+DEF bikesenseCap-rescue_+3V3-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "bikesenseCap-rescue:+3V3-power" 0 140 50 H V C CNN
+F1 "bikesenseCap-rescue_+3V3-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -16,34 +37,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# bikesenseCap-rescue:CCS811-ccs811
+# bikesenseCap-rescue_Conn_01x04_Male-Connector
 #
-DEF bikesenseCap-rescue:CCS811-ccs811 U 0 40 Y Y 1 F N
-F0 "U" 50 0 50 H V C CNN
-F1 "bikesenseCap-rescue:CCS811-ccs811" 400 -1000 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S 0 -50 500 -950 0 1 0 N
-X ADDR 1 600 -800 100 L 50 50 1 1 U
-X SCL 10 600 -100 100 L 50 50 1 1 U
-X GND 11 -100 -900 100 R 50 50 1 1 U
-X RST 2 600 -500 100 L 50 50 1 1 U I
-X INT 3 600 -650 100 L 50 50 1 1 U I
-X PWM 4 -100 -350 100 R 50 50 1 1 W
-X SENSE 5 -100 -500 100 R 50 50 1 1 I
-X VDD 6 -100 -100 100 R 50 50 1 1 W
-X WAKE 7 600 -350 100 L 50 50 1 1 U I
-X AUX 8 -100 -650 100 R 50 50 1 1 I
-X SDA 9 600 -200 100 L 50 50 1 1 U
-ENDDRAW
-ENDDEF
-#
-# bikesenseCap-rescue:Conn_01x04_Male-Connector
-#
-DEF bikesenseCap-rescue:Conn_01x04_Male-Connector J 0 40 Y N 1 F N
+DEF bikesenseCap-rescue_Conn_01x04_Male-Connector J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "bikesenseCap-rescue:Conn_01x04_Male-Connector" 0 -300 50 H V C CNN
+F1 "bikesenseCap-rescue_Conn_01x04_Male-Connector" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -65,11 +63,11 @@ X Pin_4 4 200 -200 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# bikesenseCap-rescue:GND-power
+# bikesenseCap-rescue_GND-power
 #
-DEF bikesenseCap-rescue:GND-power #PWR 0 0 Y Y 1 F P
+DEF bikesenseCap-rescue_GND-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "bikesenseCap-rescue:GND-power" 0 -150 50 H V C CNN
+F1 "bikesenseCap-rescue_GND-power" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -78,11 +76,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# bikesenseCap-rescue:LED_Small-Device
+# bikesenseCap-rescue_LED_Small-Device
 #
-DEF bikesenseCap-rescue:LED_Small-Device D 0 10 N N 1 F N
+DEF bikesenseCap-rescue_LED_Small-Device D 0 10 N N 1 F N
 F0 "D" -50 125 50 H V L CNN
-F1 "bikesenseCap-rescue:LED_Small-Device" -175 -100 50 H V L CNN
+F1 "bikesenseCap-rescue_LED_Small-Device" -175 -100 50 H V L CNN
 F2 "" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 $FPLIST
@@ -101,11 +99,11 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# bikesenseCap-rescue:PAD-cap1188
+# bikesenseCap-rescue_PAD-cap1188
 #
-DEF bikesenseCap-rescue:PAD-cap1188 J 0 40 Y Y 1 F N
+DEF bikesenseCap-rescue_PAD-cap1188 J 0 40 Y Y 1 F N
 F0 "J" 400 500 50 H V C CNN
-F1 "bikesenseCap-rescue:PAD-cap1188" 500 400 50 H V C CNN
+F1 "bikesenseCap-rescue_PAD-cap1188" 500 400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -114,11 +112,11 @@ X SENSE 1 0 400 100 R 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #
-# bikesenseCap-rescue:PWR_FLAG-power
+# bikesenseCap-rescue_PWR_FLAG-power
 #
-DEF bikesenseCap-rescue:PWR_FLAG-power #FLG 0 0 N N 1 F P
+DEF bikesenseCap-rescue_PWR_FLAG-power #FLG 0 0 N N 1 F P
 F0 "#FLG" 0 75 50 H I C CNN
-F1 "bikesenseCap-rescue:PWR_FLAG-power" 0 150 50 H V C CNN
+F1 "bikesenseCap-rescue_PWR_FLAG-power" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -127,11 +125,11 @@ X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
-# bikesenseCap-rescue:R_Small-Device
+# bikesenseCap-rescue_R_Small-Device
 #
-DEF bikesenseCap-rescue:R_Small-Device R 0 10 N N 1 F N
+DEF bikesenseCap-rescue_R_Small-Device R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "bikesenseCap-rescue:R_Small-Device" 30 -40 50 H V L CNN
+F1 "bikesenseCap-rescue_R_Small-Device" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -144,11 +142,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# bikesenseCap-rescue:TCA9534-Interface_Expansion
+# bikesenseCap-rescue_TCA9534-Interface_Expansion
 #
-DEF bikesenseCap-rescue:TCA9534-Interface_Expansion U 0 40 Y Y 1 F N
+DEF bikesenseCap-rescue_TCA9534-Interface_Expansion U 0 40 Y Y 1 F N
 F0 "U" -250 500 50 H V L CNN
-F1 "bikesenseCap-rescue:TCA9534-Interface_Expansion" 100 500 50 H V L CNN
+F1 "bikesenseCap-rescue_TCA9534-Interface_Expansion" 100 500 50 H V L CNN
 F2 "" 950 -550 50 H I C CNN
 F3 "" 100 -100 50 H I C CNN
 $FPLIST
@@ -176,43 +174,11 @@ X P4 9 400 -100 150 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# bikesenseCap-rescue:Thermistor_NTC-Device
+# bikesenseCap-rescue_cap1188-cap1188
 #
-DEF bikesenseCap-rescue:Thermistor_NTC-Device TH 0 0 N Y 1 F N
-F0 "TH" -175 0 50 V V C CNN
-F1 "bikesenseCap-rescue:Thermistor_NTC-Device" 125 0 50 V V C CNN
-F2 "" 0 50 50 H I C CNN
-F3 "" 0 50 50 H I C CNN
-$FPLIST
- *NTC*
- *Thermistor*
- PIN?ARRAY*
- bornier*
- *Terminal?Block*
-$ENDFPLIST
-DRAW
-A -126 88 7 -265 818 0 1 0 N -120 85 -125 95
-A -110 85 10 1800 -900 0 1 0 N -120 85 -110 75
-A -110 85 10 -900 0 0 1 0 N -110 75 -100 85
-A -110 110 10 0 900 0 1 0 N -100 110 -110 120
-A -110 110 10 900 1800 0 1 0 N -110 120 -120 110
-A -110 110 10 1800 -900 0 1 0 N -120 110 -110 100
-A -104 119 20 -1075 -253 0 1 0 N -110 100 -85 110
-S -40 100 40 -100 0 1 10 N
-P 2 0 1 0 -100 85 -100 110 N
-P 4 0 1 0 -70 100 -70 60 70 -60 70 -100 N
-P 6 0 1 0 -100 -145 -100 -55 -110 -85 -90 -85 -100 -55 -100 -65 F
-P 6 0 1 0 -70 -55 -70 -145 -80 -115 -60 -115 -70 -145 -70 -135 F
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# bikesenseCap-rescue:cap1188-cap1188
-#
-DEF bikesenseCap-rescue:cap1188-cap1188 U 0 40 Y Y 1 F N
+DEF bikesenseCap-rescue_cap1188-cap1188 U 0 40 Y Y 1 F N
 F0 "U" -50 300 50 H V C CNN
-F1 "bikesenseCap-rescue:cap1188-cap1188" 100 -1450 50 H V C CNN
+F1 "bikesenseCap-rescue_cap1188-cap1188" 100 -1450 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -242,6 +208,54 @@ X LED2 6 950 -50 100 L 50 50 1 1 w
 X LED3 7 950 -250 100 L 50 50 1 1 w
 X LED4 8 950 -450 100 L 50 50 1 1 w
 X LED5 9 950 -650 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# bme680_bme680
+#
+DEF bme680_bme680 U 0 40 Y Y 1 F N
+F0 "U" 250 400 50 H V C CNN
+F1 "bme680_bme680" -50 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 300 -150 -200 350 0 1 0 N
+X GND 1 -300 250 100 R 50 50 1 1 w
+X CSB 2 -300 150 100 R 50 50 1 1 B
+X SDA 3 -300 50 100 R 50 50 1 1 B
+X SCL 4 -300 -50 100 R 50 50 1 1 B
+X SDO 5 400 250 100 L 50 50 1 1 B
+X VDDIO 6 400 150 100 L 50 50 1 1 W
+X GND 7 400 50 100 L 50 50 1 1 w
+X VDD 8 400 -50 100 L 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# power_GNDS
+#
+DEF power_GNDS #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GNDS" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GNDS 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# ufl_ufl
+#
+DEF ufl_ufl J 0 40 Y Y 1 F N
+F0 "J" 250 300 50 H V C CNN
+F1 "ufl_ufl" 250 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 100 0 1 0 N
+C 0 0 250 0 1 0 N
+X GND 1 0 -350 100 U 50 50 1 1 U
+X SIG 2 200 0 100 L 50 50 1 1 U
 ENDDRAW
 ENDDEF
 #

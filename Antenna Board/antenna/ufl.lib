@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# ufl
+#
+DEF ufl J 0 40 Y Y 1 F N
+F0 "J" 250 300 50 H V C CNN
+F1 "ufl" 250 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 100 0 1 0 N
+C 0 0 250 0 1 0 N
+X GND 1 0 -350 100 U 50 50 1 1 U
+X SIG 2 200 0 100 L 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+#End Library
