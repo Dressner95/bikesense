@@ -1,13 +1,13 @@
 EESchema Schematic File Version 4
 LIBS:bikesenseCap-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr User 9843 7874
 encoding utf-8
 Sheet 1 1
 Title "Bike Sense Daughter Board"
-Date "2019-05-10"
-Rev "PROD A"
+Date "2019-07-31"
+Rev "PROD B"
 Comp "David Dressner"
 Comment1 ""
 Comment2 ""
@@ -262,140 +262,6 @@ Wire Wire Line
 	4000 1225 4150 1225
 Wire Wire Line
 	4000 1425 4150 1425
-$Comp
-L bikesenseCap-rescue:LED_Small-Device D6
-U 1 1 5BE39893
-P 4875 1725
-F 0 "D6" H 4975 1775 50  0000 C CNN
-F 1 "LED_Small" H 4875 1611 50  0001 C CNN
-F 2 "LEDs:LED_0603_HandSoldering" V 4875 1725 50  0001 C CNN
-F 3 "~" V 4875 1725 50  0001 C CNN
-	1    4875 1725
-	1    0    0    -1  
-$EndComp
-$Comp
-L bikesenseCap-rescue:LED_Small-Device D5
-U 1 1 5BE398DF
-P 4875 1525
-F 0 "D5" H 4975 1575 50  0000 C CNN
-F 1 "LED_Small" H 4875 1411 50  0001 C CNN
-F 2 "LEDs:LED_0603_HandSoldering" V 4875 1525 50  0001 C CNN
-F 3 "~" V 4875 1525 50  0001 C CNN
-	1    4875 1525
-	1    0    0    -1  
-$EndComp
-$Comp
-L bikesenseCap-rescue:LED_Small-Device D4
-U 1 1 5BE39929
-P 4875 1325
-F 0 "D4" H 4975 1375 50  0000 C CNN
-F 1 "LED_Small" H 4875 1211 50  0001 C CNN
-F 2 "LEDs:LED_0603_HandSoldering" V 4875 1325 50  0001 C CNN
-F 3 "~" V 4875 1325 50  0001 C CNN
-	1    4875 1325
-	1    0    0    -1  
-$EndComp
-$Comp
-L bikesenseCap-rescue:LED_Small-Device D3
-U 1 1 5BE39981
-P 4875 1125
-F 0 "D3" H 4975 1175 50  0000 C CNN
-F 1 "LED_Small" H 4875 1011 50  0001 C CNN
-F 2 "LEDs:LED_0603_HandSoldering" V 4875 1125 50  0001 C CNN
-F 3 "~" V 4875 1125 50  0001 C CNN
-	1    4875 1125
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4775 1125 4000 1125
-Wire Wire Line
-	4775 1325 4000 1325
-Wire Wire Line
-	4775 1525 4000 1525
-Wire Wire Line
-	4000 1725 4775 1725
-$Comp
-L bikesenseCap-rescue:R_Small-Device R11
-U 1 1 5BE3C213
-P 5225 1125
-F 0 "R11" V 5300 1050 50  0000 R CNN
-F 1 "470" V 5225 1200 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 5225 1125 50  0001 C CNN
-F 3 "~" H 5225 1125 50  0001 C CNN
-	1    5225 1125
-	0    -1   -1   0   
-$EndComp
-$Comp
-L bikesenseCap-rescue:R_Small-Device R12
-U 1 1 5BE3C437
-P 5225 1325
-F 0 "R12" V 5300 1250 50  0000 R CNN
-F 1 "470" V 5225 1400 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 5225 1325 50  0001 C CNN
-F 3 "~" H 5225 1325 50  0001 C CNN
-	1    5225 1325
-	0    -1   -1   0   
-$EndComp
-$Comp
-L bikesenseCap-rescue:R_Small-Device R13
-U 1 1 5BE3C48B
-P 5225 1525
-F 0 "R13" V 5300 1450 50  0000 R CNN
-F 1 "470" V 5225 1600 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 5225 1525 50  0001 C CNN
-F 3 "~" H 5225 1525 50  0001 C CNN
-	1    5225 1525
-	0    -1   -1   0   
-$EndComp
-$Comp
-L bikesenseCap-rescue:R_Small-Device R14
-U 1 1 5BE3C4DD
-P 5225 1725
-F 0 "R14" V 5300 1650 50  0000 R CNN
-F 1 "470" V 5225 1800 50  0000 R CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" H 5225 1725 50  0001 C CNN
-F 3 "~" H 5225 1725 50  0001 C CNN
-	1    5225 1725
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5125 1125 4975 1125
-Wire Wire Line
-	4975 1325 5125 1325
-Wire Wire Line
-	5125 1525 4975 1525
-Wire Wire Line
-	4975 1725 5125 1725
-$Comp
-L bikesenseCap-rescue:+3V3-power #PWR0107
-U 1 1 5BE414C9
-P 5550 1050
-F 0 "#PWR0107" H 5550 900 50  0001 C CNN
-F 1 "+3V3" H 5565 1223 50  0000 C CNN
-F 2 "" H 5550 1050 50  0001 C CNN
-F 3 "" H 5550 1050 50  0001 C CNN
-	1    5550 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 1050 5550 1125
-Wire Wire Line
-	5550 1125 5325 1125
-Wire Wire Line
-	5325 1325 5550 1325
-Wire Wire Line
-	5550 1325 5550 1125
-Connection ~ 5550 1125
-Wire Wire Line
-	5325 1525 5550 1525
-Wire Wire Line
-	5550 1525 5550 1325
-Connection ~ 5550 1325
-Wire Wire Line
-	5325 1725 5550 1725
-Wire Wire Line
-	5550 1725 5550 1525
-Connection ~ 5550 1525
 $Comp
 L bikesenseCap-rescue:TCA9534-Interface_Expansion U3
 U 1 1 5BECCC0F
@@ -1081,7 +947,7 @@ NoConn ~ 4000 2425
 NoConn ~ 4000 2525
 NoConn ~ 4000 2625
 $Comp
-L bme680:bme680 U1
+L bikesenseCap-rescue:bme680-bme680 U1
 U 1 1 5C81009D
 P 1600 4850
 F 0 "U1" H 1650 5365 50  0000 C CNN
@@ -1236,58 +1102,6 @@ Wire Notes Line
 Text Notes 3125 3275 0    50   ~ 0
 W3011 - Antenna
 $Comp
-L Device:Antenna_Shield AE1
-U 1 1 5CD75914
-P 4450 3950
-F 0 "AE1" H 4590 3991 50  0000 L CNN
-F 1 "W3011" H 4590 3900 50  0000 L CNN
-F 2 "antenna:w3011" H 4450 4050 50  0001 C CNN
-F 3 "~" H 4450 4050 50  0001 C CNN
-	1    4450 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L ufl:ufl J6
-U 1 1 5CD75B95
-P 4025 4725
-F 0 "J6" H 4025 5140 50  0000 C CNN
-F 1 "ufl" H 4025 5049 50  0000 C CNN
-F 2 ".pretty:ufl" H 4025 4725 50  0001 C CNN
-F 3 "" H 4025 4725 50  0001 C CNN
-	1    4025 4725
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4450 4150 4450 4725
-Wire Wire Line
-	4450 4725 4225 4725
-$Comp
-L power:GNDS #PWR0108
-U 1 1 5CD7E2DA
-P 4550 4275
-F 0 "#PWR0108" H 4550 4025 50  0001 C CNN
-F 1 "GNDS" H 4555 4102 50  0000 C CNN
-F 2 "" H 4550 4275 50  0001 C CNN
-F 3 "" H 4550 4275 50  0001 C CNN
-	1    4550 4275
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 4150 4550 4275
-$Comp
-L power:GNDS #PWR0109
-U 1 1 5CD86B4A
-P 4025 5200
-F 0 "#PWR0109" H 4025 4950 50  0001 C CNN
-F 1 "GNDS" H 4030 5027 50  0000 C CNN
-F 2 "" H 4025 5200 50  0001 C CNN
-F 3 "" H 4025 5200 50  0001 C CNN
-	1    4025 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4025 5200 4025 5075
-$Comp
 L bikesenseCap-rescue:Conn_01x04_Male-Connector J1
 U 1 1 5BE338ED
 P 1000 1100
@@ -1299,4 +1113,8 @@ F 4 "110990037" H 1000 1100 50  0001 C CNN "Arrow#"
 	1    1000 1100
 	1    0    0    -1  
 $EndComp
+NoConn ~ 4000 1125
+NoConn ~ 4000 1325
+NoConn ~ 4000 1525
+NoConn ~ 4000 1725
 $EndSCHEMATC
